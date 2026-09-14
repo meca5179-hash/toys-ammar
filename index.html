@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- إعدادات المشاركة (لتظهر كبطاقة أنيقة عند إرسال الرابط في واتساب أو فيسبوك) -->
+  <meta property="og:title" content="العاب عمار | Huskal Group">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="STORE_IMAGE_URL"> <!-- سيظهر الشعار هنا بعد إضافته -->
+  <meta property="og:type" content="website">
+
+  <title>العاب عمار | Huskal Group</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container"></div>
+
+  <!-- بداية الصندوق الرئيسي -->
+  <div class="wrapper">
+
+    <!-- صورة التغبيش  -->
+    <img src="images/photo_2026-09-14_22-30-15.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(8px) brightness(0.3); -webkit-filter: blur(8px) brightness(0.3); z-index: -1; pointer-events: none;" alt="خلفية">
+    <!-- الشعار  -->
+    <img src="images/photo_2026-09-14_22-30-15.jpg" style="width: 100%; height: 420px; border-radius: 15px; object-fit: cover; border: 2px solid #edc967; margin-bottom: 20px; position: relative; z-index: 1;" alt="صورة المحل">
+    <h1>العاب عمار </h1>
+    <h1> حسكل كروب </h1>
+
+    <p>كافة انواع الالعاب و العربيات الاطفال  </p>
+    <p>ومستلزماتها المستورده من الصين </p>
+    <!-- <p><b>•  جودة عالية • اسعار منافسة •  بيع حصرا جملة </b></p> -->
+
+    <!-- شبكة الأزرار -->
+    <div class="social-grid">
+      <!-- الصف الأول -->
+      <div class="first-row">
+        <div class="icon whatsapp" onclick="openWhatsAppModal()">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </div>
+        <!-- رابط الانستغرام  -->
+        <a href="https://www.instagram.com/ammar.toys?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="icon instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <!-- رابط الفيس بوك  -->
+        <a href="https://www.facebook.com/share/1BphnFQErn/" target="_blank" class="icon facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- الصف الثاني -->
+      <div class="second-row">
+        <!-- موقع المحل  -->
+        <a href="https://maps.app.goo.gl/M55u9LRmGbPye2KW6" target="_blank" class="icon location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Location</span>
+        </a>
+        <!-- الرقم للتواصل  -->
+        <a href="tel:+963934573020" class="icon phone">
+          <i class="fas fa-phone"></i>
+          <span>Call</span>
+        </a>
+      </div>
+    </div> <!-- نهاية شبكة الأزرار (social-grid) -->
+
+  </div> <!-- نهاية الصندوق الرئيسي (wrapper) - هذا هو السطر الذي أضفناه ليحرر النافذة! -->
+
+
+  <!-- نافذة الواتساب المنبثقة (الآن أصبحت خارج الصندوق تماماً ولن يتم قصها) -->
+  <div id="whatsappModal" class="modal">
+    <div class="modal-content">
+      <h3>اختر طريقة التواصل</h3>
+
+      <a href="https://wa.me/963934573020" class="option-box" target="_blank">
+        <img src="images/whatsapp.png" class="option-icon">
+        <span>تواصل مع المندوب</span>
+      </a>
+      <!-- قناة الوتس اب  -->
+      <a href="https://whatsapp.com/channel/0029Vb6b5SUAe5VqJTscto3w" class="option-box" target="_blank">
+        <img src="images/application.png" class="option-icon">
+        <span>قناة عرض المنتجات</span>
+      </a>
+
+      <div class="close-x" onclick="closeWhatsAppModal()">x</div>
+    </div>
+  </div>
+
+
+  <!-- كود الجافاسكربت -->
+  <script>
+    const modal = document.getElementById("whatsappModal");
+
+    function openWhatsAppModal() {
+      modal.style.display = "flex";
+    }
+
+    function closeWhatsAppModal() {
+      modal.style.display = "none";
+    }
+
+    // إغلاق النافذة المنبثقة عند الضغط في أي مكان فارغ خارجها
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeWhatsAppModal();
+      }
+    }
+  </script>
+
+</body>
+</html>
